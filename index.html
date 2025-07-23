@@ -5,6 +5,8 @@
 	<link rel="stylesheet" href="qr.css">
 	<script src="qr1_gen.js"></script>
 	<script src="qr2_gen.js"></script>
+	<script src="qr3_gen.js"></script>
+	<script src="qr4_gen.js"></script>
 </head>
 <body ondragstart="return false" onselectstart="return false">
 	<div class="main">
@@ -12,9 +14,15 @@
 		<br/>
 		<input type="text" name="" id="testo" autocomplete="off"/>
 		<!--<button type="submit" onclick="qr2()" id="submit">Genera QR con bordo</button>-->
-		<button type="submit" onclick="qr1()" id="submit">Genera QR !</button>
+		<button type="submit" onclick="qr1()" id="submit">Genera QR da testo generico (1)</button>
+		<button type="submit" onclick="qr4()" id="submit">Genera QR da testo generico (2)</button>
+		<button type="submit" onclick="qr3()" id="submit">Genera QR da URL</button>
 		<button onclick="document.getElementById('testo').value = '';">sbianca testo</button>
-		<button onclick="document.getElementById('img').src = '';document.getElementById('img2').src = '';">cancella immagini</button>
+		<button onclick="document.getElementById('img').src = '';document.getElementById('img2').src = '';document.getElementById('img3').src = '';">cancella immagini</button>
+		<br/>
+		<img class="" src="" alt="" id="img4"/>
+		<br/>
+		<img class="" src="" alt="" id="img3"/>
 		<br/>
 		<img class="" src="" alt="" id="img2"/>
 		<br/>
